@@ -2,16 +2,17 @@
 
 ## Giriş
 
-Marine Predators Algorithm (MPA), deniz yırtıcılarının avlanma stratejilerinden ilham alan, doğadan esinlenmiş bir metaheuristik optimizasyon algoritmasıdır. Bu algoritma, Lévy ve Brownian hareketlerini kullanarak yırtıcı ile av arasındaki biyolojik etkileşimleri taklit eder. İlk kez 2020 yılında "Expert Systems with Applications" dergisinde tanıtılmış olan bu algoritma, mühendislik problemleri ve matematiksel fonksiyonlar üzerinde çok başarılı sonuçlar vermiştir.
+Marine Predators Algorithm (MPA), deniz yırtıcılarının avlanma stratejilerinden esinlenerek tasarlanmış bir doğadan ilham alan metaheuristik optimizasyon algoritmasıdır. Özellikle Lévy ve Brownian hareketlerine dayanan bu algoritma, yırtıcı ve av arasındaki biyolojik etkileşimlerin en uygun karşılaşma oranı politikasını taklit eder.İlk kez 2020 yılında "Expert Systems with Applications" dergisinde tanıtılmış olan bu algoritma, mühendislik problemleri ve matematiksel fonksiyonlar üzerinde çok başarılı sonuçlar vermiştir.
 
 ## Temel Özellikler
 
 1. **Doğadan Esinlenme**: Algoritma, yırtıcı ve avın doğada izlediği stratejilerden esinlenmiştir.
    - **Lévy Hareketi**: Az av yoğunluklu alanlarda kullanılır, küçük adımlar ve uzun sıçramalarla karakterizedir.
    - **Brownian Hareketi**: Yüksek av yoğunluklu alanlarda daha düzenli ve kontrollü adımlar izler.
-2. **Hafıza Mekanizması**: Algoritma, daha önce başarılı çözüm bulduğu konumları hafızaya alarak arama etkinliğini artırır.
+2. **Hafıza Mekanizması**: Deniz yırtıcılarının hafıza özellikleri simüle edilmiştir. Bu, algoritmanın önceki başarılı arama alanlarını hatırlamasını sağlar ve çözüm kalitesini artırır. Hafıza mekanizması, yırtıcı ve avın hareketlerini ve pozisyonlarını sürekli iyileştirir.
 3. **Keşfetme ve Sömürme Dengesi**: Algoritma, küresel ve yerel arama stratejilerini dengeli bir şekilde uygular.
-4. **FAD ve Eddy Efektleri**: Yerel minimumlarda sıkışmayı önlemek için "Fish Aggregating Devices" gibi çevresel etkileri dikkate alır.
+4. **FAD ve Eddy Efektleri**: Doğal veya insan kaynaklı çevresel faktörleri (örneğin, eddy formasyonu ve Balık Çekim Cihazları - FAD) dikkate alır. Bu etkiler, algoritmanın yerel optimumlarda sıkışmasını önlemeye yardımcı olur.
+5. **Yapısı**: Sırasıyla keşif(Exploration), geçiş(transition) ve sömürü(exploitation) olacak şekilde 3 ana aşamadan oluşur. İlk aşamada, yırtıcı hareketsiz kalırken av Brownian hareketiyle keşif yapar. İkinci aşamada, av Lévy hareketiyle sömürü yaparken yırtıcı Brownian hareketiyle keşfe devam eder.Son aşamada, yırtıcı Lévy hareketine geçerek en uygun çözüme odaklanır. Algoritmanın bu üç aşaması, av ve yırtıcı arasındaki hız oranına bağlı olarak düzenlenmiştir.
 
 ## Konum Güncelleme Denklemleri
 
