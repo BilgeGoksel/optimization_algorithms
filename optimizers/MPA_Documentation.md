@@ -12,7 +12,7 @@ Marine Predators Algorithm (MPA), deniz yırtıcılarının avlanma stratejileri
 2. **Hafıza Mekanizması**: Deniz yırtıcılarının hafıza özellikleri simüle edilmiştir. Bu, algoritmanın önceki başarılı arama alanlarını hatırlamasını sağlar ve çözüm kalitesini artırır. Hafıza mekanizması, yırtıcı ve avın hareketlerini ve pozisyonlarını sürekli iyileştirir.
 3. **Keşfetme ve Sömürme Dengesi**: Algoritma, küresel ve yerel arama stratejilerini dengeli bir şekilde uygular.
 4. **FAD ve Eddy Efektleri**: Doğal veya insan kaynaklı çevresel faktörleri (örneğin, eddy formasyonu ve Balık Çekim Cihazları - FAD) dikkate alır. Bu etkiler, algoritmanın yerel optimumlarda sıkışmasını önlemeye yardımcı olur.
-5. **Yapısı**: Sırasıyla keşif(Exploration), geçiş(transition) ve sömürü(exploitation) olacak şekilde 3 ana aşamadan oluşur. İlk aşamada, yırtıcı hareketsiz kalırken av Brownian hareketiyle keşif yapar. İkinci aşamada, av Lévy hareketiyle sömürü yaparken yırtıcı Brownian hareketiyle keşfe devam eder.Son aşamada, yırtıcı Lévy hareketine geçerek en uygun çözüme odaklanır. Algoritmanın bu üç aşaması, av ve yırtıcı arasındaki hız oranına bağlı olarak düzenlenmiştir.
+5. **Yapısı**: Sırasıyla keşif (Exploration), geçiş (transition) ve sömürü (exploitation) olacak şekilde 3 ana aşamadan oluşur. İlk aşamada, yırtıcı hareketsiz kalırken av Brownian hareketiyle keşif yapar. İkinci aşamada, av Lévy hareketiyle sömürü yaparken yırtıcı Brownian hareketiyle keşfe devam eder.Son aşamada, yırtıcı Lévy hareketine geçerek en uygun çözüme odaklanır. Algoritmanın bu üç aşaması, av ve yırtıcı arasındaki hız oranına bağlı olarak düzenlenmiştir.
 
 ## Konum Güncelleme Denklemleri
 
